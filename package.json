@@ -1,0 +1,31 @@
+{
+  "name": "jest-typescript",
+  "version": "1.0.0",
+  "description": "Mocking function for jest implementation",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npx jest",
+    "build": "npx tsc -b",
+    "test-local": "NODE_ENV=testing ./node_modules/.bin/jest --coverage --forceExit --runInBand --verbose --no-cache --testTimeout=60000 --complexity=0"
+  },
+  "keywords": [
+    "jest",
+    "typescript",
+    "unit-test"
+  ],
+  "author": "Nayan Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/pg": "^8.6.6",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1373.0",
+    "tsconfig-paths": "^4.2.0",
+    "tslib": "^2.5.0"
+  }
+}
